@@ -28,7 +28,7 @@
   @keyframes fall {
     0%   { transform: translateY(-6vh) translateX(0) rotate(0deg) scale(1); opacity:0; }
     8%   { opacity:.9; }
-    100% { transform: translateY(112vh) translateX(var(--drift)) rotate(var(--spin)) scale(.6); opacity:.2; }
+    100% { transforxm: translateY(112vh) translateX(var(--drift)) rotate(var(--spin)) scale(.6); opacity:.2; }
   }
 
   /* ---------- overlay content ---------- */
@@ -214,9 +214,9 @@
 <!-- Screen 1 : Bouquet + password -->
 <div class="overlay" id="lockScreen">
   <div class="headline">For You, Hira</div>
-  <div class="hint">Letter kholne ke liye code likhein 👇</div>
+  <div class="hint">Letter kholne ke liye msg likhein 👇</div>
   <div class="lock-box" id="lockBox">
-    <input type="text" id="pw" placeholder="code likhein..." autocomplete="off">
+    <input type="text" id="pw" placeholder="msg likhein..." autocomplete="off">
     <button onclick="tryUnlock()">Open 💌</button>
   </div>
   <div id="err"></div>
